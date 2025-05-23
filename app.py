@@ -21,6 +21,7 @@ app = Dash(__name__,
           meta_tags=[{'name': 'viewport', 
                      'content': 'width=device-width, initial-scale=1.0'}])
 app.server.secret_key = 'AlSolutions-Secret-Key-123' 
+server = app.server
 
 # Simple authentication setup
 VALID_USERNAME_PASSWORD_PAIRS = {
@@ -42,7 +43,7 @@ def country_to_continent(country_name):
 # Load and process data
 def load_data():
     # Specify the exact path to your dataset
-    data_path = r'C:\Users\PC\Desktop\PD\assignmet\web_server_logs.csv'
+    data_path = r'web_server_logs.csv'
     
     try:
         df = pd.read_csv(data_path)
