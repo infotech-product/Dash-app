@@ -1,0 +1,11 @@
+pandas
+dash
+plotly
+dash-auth
+dash-bootstrap-components
+numpy
+pycountry-convert
+pdfkit
+Flask
+openpyxl
+xlrd
